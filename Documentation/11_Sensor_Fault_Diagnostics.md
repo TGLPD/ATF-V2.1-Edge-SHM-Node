@@ -64,28 +64,29 @@ Once an anomaly is detected, the Core 1 processor executes a decision tree to cl
 
 ```mermaid
 flowchart TD
-    A[New Multi-Sensor Reading Vector] --> B{Calculate Mahalanobis Distance}
-    B -->|D_M² <= 13.28| C[Sensors Healthy, Normal Operation]
-    B -->|D_M² > 13.28| D[Statistical Anomaly Detected]
+    A["New Multi-Sensor Reading Vector"] --> B{"Calculate Mahalanobis Distance"}
     
-    D --> E{Preceding Acoustic Transient?}
-    E -->|YES (Wavelet Confirmed)| F[Physical Trigger Exists]
-    E -->|NO (Silent)| G[No Physical Trigger]
+    B -->|"D_M² <= 13.28"| C["Sensors Healthy, Normal Operation"]
+    B -->|"D_M² > 13.28"| D["Statistical Anomaly Detected"]
     
-    F --> H[Likely STRUCTURAL Anomaly]
-    H --> I[Proceed to Page-Hinkley Changepoint Check]
+    D --> E{"Preceding Acoustic Transient?"}
+    E -->|"YES (Wavelet Confirmed)"| F["Physical Trigger Exists"]
+    E -->|"NO (Silent)"| G["No Physical Trigger"]
     
-    G --> J[Likely SENSOR Fault]
-    J --> K[Analyze Mahalanobis Channel Contributions]
+    F --> H["Likely STRUCTURAL Anomaly"]
+    H --> I["Proceed to Page-Hinkley Changepoint Check"]
     
-    K --> L{Which Channel Drives D_M?}
-    L -->|Single Channel Dominant| M[Specific Sensor Suspect]
-    L -->|Multiple Channels| N[Environmental Event / Multi-Fault]
+    G --> J["Likely SENSOR Fault"]
+    J --> K["Analyze Mahalanobis Channel Contributions"]
     
-    M --> O{Historical Trend Check}
-    O -->|Gradual Divergence| P[Degradation Fault]
-    O -->|Sudden Jump| Q[Debonding / Wiring Fault]
-    O -->|Intermittent Spikes| R[Loose Connection / Ingress]
+    K --> L{"Which Channel Drives D_M?"}
+    L -->|"Single Channel Dominant"| M["Specific Sensor Suspect"]
+    L -->|"Multiple Channels"| N["Environmental Event / Multi-Fault"]
+    
+    M --> O{"Historical Trend Check"}
+    O -->|"Gradual Divergence"| P["Degradation Fault"]
+    O -->|"Sudden Jump"| Q["Debonding / Wiring Fault"]
+    O -->|"Intermittent Spikes"| R["Loose Connection / Ingress"]
 
     %% Improved Contrast Styling
     classDef default fill:#f4f4f4,stroke:#333,stroke-width:1px,color:#000;
