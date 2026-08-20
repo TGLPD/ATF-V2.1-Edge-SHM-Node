@@ -46,5 +46,3 @@ Instead of a single ML probability score, **Dempster-Shafer theory** lets you co
 3. **Physics-informed residual modeling** — highest effort, but genuinely the strongest differentiator and the one most likely to survive an obviousness challenge, because it's not "more sensors + ML," it's a fundamentally different reasoning approach (expected-vs-observed physics residual).
 
 Mahalanobis distance and Dempster-Shafer are both good, moderate-effort upgrades to the sensor-fault logic specifically — I'd treat them as a secondary pass once 1–3 are solid.
-
-Want me to update the documents with these — specifically reworking the causal-correlation and sensor-fault sections around wavelet transforms, changepoint detection, and the physics-informed residual model?
