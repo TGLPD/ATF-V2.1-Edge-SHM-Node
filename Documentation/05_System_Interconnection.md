@@ -64,9 +64,11 @@ graph TD
     ESP -- "Power Ctrl" --> Mosfet
     Mosfet -- "3.3V (Switched)" --> LoRa
 
-    classDef mcu fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef power fill:#ff9,stroke:#333,stroke-width:1px;
-    classDef sensor fill:#ccf,stroke:#333,stroke-width:1px;
+    %% Improved Contrast Styling
+    classDef default fill:#f4f4f4,stroke:#333,stroke-width:1px,color:#000;
+    classDef mcu fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
+    classDef power fill:#ff9,stroke:#333,stroke-width:1px,color:#000;
+    classDef sensor fill:#ccf,stroke:#333,stroke-width:1px,color:#000;
     
     class ESP mcu;
     class Solar,MPPT,TP4056,Battery,LDO,Mosfet power;
