@@ -1,4 +1,3 @@
-Here is how the three parts — the **strain gauge**, the **Wheatstone bridge**, and the **amplifier** — work together to tell your microcontroller that a structure is bending, plus how the system now learns to tell *real* bending from *thermal* bending on its own.
 
 ## 1. The Foil Strain Gauge (The Sensor)
 
