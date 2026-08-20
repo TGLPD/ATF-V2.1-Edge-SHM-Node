@@ -48,5 +48,3 @@ This is often the most underestimated constraint in hardware-for-infrastructure 
 |Government/enterprise adoption|—|Slow sales cycle, possible standards alignment needed|
 
 **Bottom line:** the core sensing and inference architecture scales technically about as well as this category of product can — the "shared model, local calibration" split and the alert-only bandwidth model are genuinely the right choices for going from 1 unit to 1,000. The real scaling constraints aren't in the electronics or the ML; they're in PCB/certification NRE, installation-technician training, fleet-management software you haven't built yet, and the long enterprise/government sales cycle that infrastructure procurement always involves. If you're pitching this for a grant, hackathon, or investor, I'd frame it exactly that way — strong technical scalability story, with a clear-eyed roadmap for the operational pieces (fleet dashboard, installer protocol, certification) as your next-stage milestones.
-
-Want me to turn this into a structured "scalability roadmap" document (pilot → regional → national phases with rough timelines/costs) to add to your project files?
