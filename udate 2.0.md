@@ -1,5 +1,3 @@
-Good instinct — this is actually where you can build something much stronger. Swapping generic thresholding and FFT for real applied mathematics gives you claims that are hard to dismiss as "obvious combination of known sensors." Here are concrete upgrades, roughly ordered by how much patent-strength they'd add relative to implementation effort.
-
 ## 1. Wavelet Transform instead of FFT for acoustic emission (strong, moderate effort)
 
 This is probably your single best upgrade. FFT tells you _what frequencies_ are present in a signal, averaged over the whole sampling window — it's bad at telling you _when_ a specific transient happened, because a fracture "snap" is a short, sharp, non-stationary event, not a steady periodic signal.
@@ -41,9 +39,7 @@ Instead of a single ML probability score, **Dempster-Shafer theory** lets you co
 
 ---
 
-### My honest recommendation on priority
-
-If I had to pick where to actually invest engineering time, in order:
+### Priority
 
 1. **Wavelet transform for acoustic detection** — directly improves real-world accuracy on the exact failure mode (transient fracture snaps) you care about, and is a clean, specific claim.
 2. **Changepoint detection (Page-Hinkley/CUSUM)** for the strain-recovery check — low effort, formalizes your strongest existing claim.
