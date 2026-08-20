@@ -176,6 +176,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 <div align="center">
 
-*Built with ESP32-S3 • TinyML • LoRa • Applied Mathematics*
+*Built with ESP32-S3 • TinyML • LoRa • Loads of Mathematics • and love*
 
 </div>
