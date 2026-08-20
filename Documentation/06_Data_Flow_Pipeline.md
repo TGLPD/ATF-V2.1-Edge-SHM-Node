@@ -148,9 +148,10 @@ flowchart TD
     P --> Q[Log Final Trace to Flash]
     Q --> R[Return to Deep Sleep]
     
-    %% Styling
-    classDef reject fill:#ffcccc,stroke:#cc0000,stroke-width:2px;
-    classDef success fill:#ccffcc,stroke:#009900,stroke-width:2px;
+    %% Styling - Contrast fixed with color:#000
+    classDef default fill:#f4f4f4,stroke:#333,stroke-width:1px,color:#000;
+    classDef reject fill:#ffcccc,stroke:#cc0000,stroke-width:2px,color:#000;
+    classDef success fill:#ccffcc,stroke:#009900,stroke-width:2px,color:#000;
     
     class F,J,M reject;
     class N,O,P success;
