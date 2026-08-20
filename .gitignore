@@ -1,0 +1,46 @@
+# ============================================
+# ATF V-2.1 — Edge-Processed SHM Node
+# ============================================
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor / IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.bak
+
+# Build artifacts
+build/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+*.o
+*.elf
+*.bin
+*.hex
+
+# ESP-IDF build (future firmware)
+sdkconfig.old
+managed_components/
+
+# TinyML / TensorFlow
+*.tflite.bak
+training_logs/
+checkpoints/
+
+# Temporary files
+*.tmp
+*.log
+scratch/
+
+# Secrets / credentials
+.env
+credentials.*
