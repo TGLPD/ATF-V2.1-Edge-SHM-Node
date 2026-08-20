@@ -86,6 +86,9 @@ flowchart TD
     O -->|Gradual Divergence| P[Degradation Fault]
     O -->|Sudden Jump| Q[Debonding / Wiring Fault]
     O -->|Intermittent Spikes| R[Loose Connection / Ingress]
+
+    %% Improved Contrast Styling
+    classDef default fill:#f4f4f4,stroke:#333,stroke-width:1px,color:#000;
 ```
 
 ### Steps in the Logic:
