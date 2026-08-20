@@ -54,13 +54,3 @@ These two are not yet required for the core working prototype but are the strong
    Instead of collapsing everything into one blended ML probability, this combines "belief" from each subsystem — causal-correlation confidence (Section 2), thermal-calibration confidence (Section 4), and sensor-health confidence (Section 5) — using a formal evidence-combination rule that explicitly represents uncertainty and conflict between sources (e.g., "acoustic strongly suggests damage, but sensor-health is uncertain"). This produces a more rigorously justified final decision than a single opaque probability score, and gives you a cleaner, more specific patent claim around *how* evidence is combined.
 
 ---
-
-### What Changed From Earlier Drafts (for reference)
-
-- "Environmental Compensation" and "Autonomous Structural Thermal Profiling" were the same mechanism described twice — merged into Section 4.
-- "Sensor-Fault vs. Structural-Fault Discrimination" and "Asymmetric Sensor-Health Diagnostics" were the same mechanism described twice — merged into Section 5, now upgraded with Mahalanobis distance instead of simple per-channel thresholds.
-- FFT-based acoustic detection (original) has been superseded by wavelet-based detection (Section 1).
-- The simple fixed-threshold "return to baseline" strain check (original) has been superseded by Page-Hinkley changepoint detection (Section 2).
-- Mahalanobis distance, physics-informed residual modeling, and Dempster-Shafer fusion — previously listed only as general "innovation ideas" — are now placed into their specific pipeline positions above.
-
-
