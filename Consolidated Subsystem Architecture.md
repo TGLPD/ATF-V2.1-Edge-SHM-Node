@@ -1,7 +1,6 @@
 ## Subsystem Architecture — Consolidated & Updated
 
-This document merges and de-duplicates all prior subsystem descriptions (original workflow, self-calibration/sensor-fault updates, and the advanced signal-processing upgrades) into one current reference. Where the same idea appeared more than once under different names (e.g. "Environmental Compensation" and "Autonomous Structural Thermal Profiling" were the same mechanism), they've been merged into a single, more complete section.
-
+This document contains all subsystem descriptions (original workflow, self-calibration/sensor-fault updates, and the advanced signal-processing upgrades).
 ---
 
 ### 1. Acoustic Emission (Micro-Fracture Detection) — Event-Triggered, Wavelet-Based
