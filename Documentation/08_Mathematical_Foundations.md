@@ -56,10 +56,12 @@ graph LR
     D3 --> A2[Approx A2]
     D4 --> D_2[Detail D2]
     
-    style x fill:#f9f,stroke:#333,stroke-width:2px
-    style D_1 fill:#bbf,stroke:#333,stroke-width:2px
-    style D_2 fill:#bbf,stroke:#333,stroke-width:2px
+    style x fill:#f9f,stroke:#333,stroke-width:2px,color:#000
+    style D_1 fill:#bbf,stroke:#333,stroke-width:2px,color:#000
+    style D_2 fill:#bbf,stroke:#333,stroke-width:2px,color:#000
 ```
+
+
 
 - **Levels 1–3 (Details):** Capture the high-frequency content characteristic of concrete fracture snaps.
 - **Levels 4+ (Approximations):** Capture low-frequency rumble (traffic, wind) and are discarded to filter out noise.
