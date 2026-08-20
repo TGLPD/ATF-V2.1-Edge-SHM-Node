@@ -101,7 +101,7 @@ Comprehensive professional documentation is available in the [`Documentation/`](
 - [x] Mathematical foundations documented
 - [x] TinyML integration designed
 - [x] BOM finalized
-- [x] Full documentation suite (17 documents)
+- [x] Full documentation suite
 - [ ] Hardware prototype assembly
 - [ ] Firmware development
 - [ ] TinyML model training
